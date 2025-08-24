@@ -1,5 +1,5 @@
  import { serve } from "inngest/next";
-import { inngest, syncUserCreation, syncUserDeletion, syncUserUpdation } from "@/config/inngest";
+import { createUserOrder, inngest, syncUserCreation, syncUserDeletion, syncUserUpdation } from "@/config/inngest";
 
 export const { GET, POST, PUT } = serve({
   client: inngest,
@@ -7,5 +7,6 @@ export const { GET, POST, PUT } = serve({
    syncUserCreation,
   syncUserUpdation ,
   syncUserDeletion, 
+  createUserOrder,
   ],
 });

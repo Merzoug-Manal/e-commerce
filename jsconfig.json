@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",        // 👈 tells VS Code where the root is
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]       // 👈 your alias works for imports like "@/config/db"
     }
-  }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"], // 👈 includes JS/TS files
+  "exclude": ["node_modules"]
 }
